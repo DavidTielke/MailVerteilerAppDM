@@ -1,4 +1,4 @@
-﻿namespace MailVerteilerApp;
+﻿namespace DavidTielke.MailVerteilerApp.Data.DataStoring;
 
 public class ReceiverRepository
 {

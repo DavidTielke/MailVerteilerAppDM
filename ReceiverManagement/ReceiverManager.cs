@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using DavidTielke.MailVerteilerApp.Data.DataStoring;
 
-namespace MailVerteilerApp
+namespace DavidTielke.MailVerteilerApp.Logic.ReceiverManagement;
+
+public class ReceiverManager
 {
-    public class ReceiverManager
+    private readonly ReceiverRepository _receiverRepository;
+
+    public ReceiverManager()
     {
-        private ReceiverRepository _receiverRepository;
+        _receiverRepository = new ReceiverRepository();
+    }
 
-        public ReceiverManager()
-        {
-            _receiverRepository = new ReceiverRepository();
-        }
-
-        public void GetForPrefix()
-        {
-            Console.WriteLine("Empfänger (logisch) geladen");
-            _receiverRepository.Load();
-        }
+    public void GetForPrefix()
+    {
+        Console.WriteLine("Empfänger (logisch) geladen");
+        _receiverRepository.Load();
     }
 }

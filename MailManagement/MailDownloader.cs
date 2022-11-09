@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace DavidTielke.MailVerteilerApp.Logic.MailManagement;
 
-namespace MailVerteilerApp
+public class MailDownloader
 {
-    public class MailDownloader
+    public void Download()
     {
-        public void Download()
-        {
-            Console.WriteLine("Email wurde heruntergeladen");
-        }
+        Console.WriteLine("Email wurde heruntergeladen");
     }
 }

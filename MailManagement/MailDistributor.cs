@@ -1,4 +1,6 @@
-﻿namespace MailVerteilerApp;
+﻿using DavidTielke.MailVerteilerApp.Logic.ReceiverManagement;
+
+namespace DavidTielke.MailVerteilerApp.Logic.MailManagement;
 
 public class MailDistributor
 {
