@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "MailVerteilerApp\ConsoleClient.csproj", "{96A495DF-21BC-41CB-8F33-B04A99DBC4F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{41816C22-974F-4B0C-8B8C-0907A033B882}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{3F2F1187-7614-425A-85D7-E0597354E596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E0045E42-5830-4437-BFE9-B88CE805D541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiverManagement", "ReceiverManagement\ReceiverManagement.csproj", "{C10C7321-321A-4EA8-90BF-BEA0F153DF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailManagement", "MailManagement\MailManagement.csproj", "{3C2096A4-A548-4656-B7CD-A177B7F451F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStoring", "DataStoring\DataStoring.csproj", "{DFCF6221-165D-4234-937F-60D7E19F1086}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96A495DF-21BC-41CB-8F33-B04A99DBC4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A495DF-21BC-41CB-8F33-B04A99DBC4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A495DF-21BC-41CB-8F33-B04A99DBC4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A495DF-21BC-41CB-8F33-B04A99DBC4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C10C7321-321A-4EA8-90BF-BEA0F153DF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10C7321-321A-4EA8-90BF-BEA0F153DF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10C7321-321A-4EA8-90BF-BEA0F153DF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10C7321-321A-4EA8-90BF-BEA0F153DF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2096A4-A548-4656-B7CD-A177B7F451F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2096A4-A548-4656-B7CD-A177B7F451F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2096A4-A548-4656-B7CD-A177B7F451F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2096A4-A548-4656-B7CD-A177B7F451F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCF6221-165D-4234-937F-60D7E19F1086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCF6221-165D-4234-937F-60D7E19F1086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCF6221-165D-4234-937F-60D7E19F1086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCF6221-165D-4234-937F-60D7E19F1086}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96A495DF-21BC-41CB-8F33-B04A99DBC4F9} = {41816C22-974F-4B0C-8B8C-0907A033B882}
+		{C10C7321-321A-4EA8-90BF-BEA0F153DF42} = {3F2F1187-7614-425A-85D7-E0597354E596}
+		{3C2096A4-A548-4656-B7CD-A177B7F451F5} = {3F2F1187-7614-425A-85D7-E0597354E596}
+		{DFCF6221-165D-4234-937F-60D7E19F1086} = {E0045E42-5830-4437-BFE9-B88CE805D541}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1CE162E-D7E0-4F25-8576-61A0B49F91B9}
+	EndGlobalSection
+EndGlobal
