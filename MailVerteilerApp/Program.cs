@@ -1,4 +1,6 @@
-﻿using DavidTielke.MailVerteilerApp.Logic.MailManagement;
+﻿using DavidTielke.MailVerteilerApp.Data.DataStoring;
+using DavidTielke.MailVerteilerApp.Logic.MailManagement;
+using DavidTielke.MailVerteilerApp.Logic.ReceiverManagement;
 
 namespace DavidTielke.MailVerteilerApp.UI.ConsoleClient;
 
@@ -18,7 +20,13 @@ public class Program
 {
     public static void Main()
     {
-        var verteiler = new MailDistributor();
+        var downloader = new MailDownloader();
+        var poller = new MailPoller(null, downloader);
+        var sender = new MailSender(null);
+        var repository = new ReceiverRepository();
+        var manager = new ReceiverManager(repository);
+
+        var verteiler = new MailDistributor(poller, sender, manager);
         verteiler.Start();
 
 

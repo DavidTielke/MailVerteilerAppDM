@@ -1,6 +1,6 @@
 ﻿namespace DavidTielke.MailVerteilerApp.Data.DataStoring;
 
-public class ReceiverRepository
+public class ReceiverRepository : IReceiverRepository
 {
     public void Load()
     {

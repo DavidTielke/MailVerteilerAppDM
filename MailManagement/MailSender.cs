@@ -1,10 +1,10 @@
 ﻿namespace DavidTielke.MailVerteilerApp.Logic.MailManagement;
 
-public class MailSender
+public class MailSender : IMailSender
 {
     private readonly MailDistributor _mailDistributor;
 
-    public MailSender(MailDistributor mailDistributor)
+    public MailSender(IMailDistributor mailDistributor)
     {
         _mailDistributor = mailDistributor;
     }

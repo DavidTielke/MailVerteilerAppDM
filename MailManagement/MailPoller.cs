@@ -1,14 +1,14 @@
 ﻿namespace DavidTielke.MailVerteilerApp.Logic.MailManagement;
 
-public class MailPoller
+public class MailPoller : IMailPoller
 {
-    private readonly MailDistributor _mailDistributor;
-    private readonly MailDownloader _mailDownloader;
+    private readonly IMailDistributor _mailDistributor;
+    private readonly IMailDownloader _mailDownloader;
 
-    public MailPoller(MailDistributor mailDistributor)
+    public MailPoller(IMailDistributor mailDistributor, IMailDownloader mailDownloader)
     {
         _mailDistributor = mailDistributor;
-        _mailDownloader = new MailDownloader();
+        _mailDownloader = mailDownloader;
     }
 
     public void Start()

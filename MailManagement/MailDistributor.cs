@@ -4,17 +4,17 @@ namespace DavidTielke.MailVerteilerApp.Logic.MailManagement;
 
 public class MailDistributor
 {
-    private readonly MailPoller _mailPoller;
+    private readonly IMailPoller _mailPoller;
 
-    private readonly MailSender _mailSender;
+    private readonly IMailSender _mailSender;
 
-    private readonly ReceiverManager _receiverManager;
+    private readonly IReceiverManager _receiverManager;
 
-    public MailDistributor()
+    public MailDistributor(IMailPoller mailPoller, IMailSender mailSender, IReceiverManager receiverManager)
     {
-        _receiverManager = new ReceiverManager();
-        _mailPoller = new MailPoller(this);
-        _mailSender = new MailSender(this);
+        _mailPoller = mailPoller;
+        _mailSender = mailSender;
+        _receiverManager = receiverManager;
     }
 
     public void Start()

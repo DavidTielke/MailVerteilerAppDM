@@ -1,6 +1,6 @@
 ﻿namespace DavidTielke.MailVerteilerApp.Logic.MailManagement;
 
-public class MailDownloader
+public class MailDownloader : IMailDownloader
 {
     public void Download()
     {

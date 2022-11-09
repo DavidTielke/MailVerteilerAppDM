@@ -2,13 +2,13 @@
 
 namespace DavidTielke.MailVerteilerApp.Logic.ReceiverManagement;
 
-public class ReceiverManager
+public class ReceiverManager : IReceiverManager
 {
-    private readonly ReceiverRepository _receiverRepository;
+    private readonly IReceiverRepository _receiverRepository;
 
-    public ReceiverManager()
+    public ReceiverManager(IReceiverRepository receiverRepository)
     {
-        _receiverRepository = new ReceiverRepository();
+        _receiverRepository = receiverRepository;
     }
 
     public void GetForPrefix()
