@@ -17,15 +17,15 @@ public class MailPoller : IMailPoller
         NewMailDetected();
     }
 
+    public void Stop()
+    {
+        Console.WriteLine("Polling gestoppt");
+    }
+
     private void NewMailDetected()
     {
         Console.WriteLine("Neue Mail erkannt");
         _mailDownloader.Download();
         _mailDistributor.Distribute();
-    }
-
-    public void Stop()
-    {
-        Console.WriteLine("Polling gestoppt");
     }
 }
